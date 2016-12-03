@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Parallel test suite]" parallel="tests">
+  <test name="Regression 2(failed)" parallel="tests">
+    <classes>
+      <class name="com.test.GridExampleTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.test.GridExampleTest -->
+      <class name="com.test.GridExampleTest2">
+        <methods>
+          <include name="testGooglePageTitleInIEBrowser"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.test.GridExampleTest2 -->
+    </classes>
+  </test> <!-- Regression 2(failed) -->
+</suite> <!-- Failed suite [Parallel test suite] -->
